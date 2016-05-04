@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: patiencebar
-Version: 1.0
+Version: 1.0.1
 Summary: Terminal progress bar compatible with multi-threading
 Home-page: https://github.com/ceyzeriat/patiencebar/
 Author: Guillaume Schworer

@@ -28,7 +28,7 @@
 from __future__ import print_function, absolute_import, unicode_literals
 
 __all__ = ["Patiencebar", "Patiencebarmulti", "__version__", "__author__", "__copyright__", "__contributors__"]
-__version__ = "1.0"
+__version__ = "1.0.1"
 __author__ = "Guillaume Schworer (guillaume.schworer@obspm.fr)"
 __copyright__ = "Copyright 2016 Guillaume Schworer"
 __contributors__ = [
