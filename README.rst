@@ -14,7 +14,7 @@ Just run
 
 ::
 
-    pip install corner
+    pip install patiencebar
 
 to get the most recent stable version.
 
@@ -66,5 +66,5 @@ License
 
 Copyright 2016 Guillaume Schworer
 
-corner.py is free software made available under the GNU General
+patiencebar is free software made available under the GNU General
 Public License v3 or later (GPLv3+) license (see ``LICENSE``).
