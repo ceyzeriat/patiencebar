@@ -1,0 +1,5 @@
+*.pyc
+*~
+*~lock*
+*fuse_hidden*
+docs/
