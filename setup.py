@@ -23,9 +23,7 @@ def rd(filename):
     f.close()
     return r
 
-vre = re.compile("__version__ = \"(.*?)\"")
-m = rd(os.path.join(os.path.dirname(os.path.abspath(__file__)), "patiencebar", "patiencebar.py"))
-version = vre.findall(m)[0]
+version = re.findall(r"__version__ = \"(.*?)\"", open("patiencebar.py").read())[0]
 
 
 setup(
@@ -33,14 +31,14 @@ setup(
     version=version,
     author="Guillaume Schworer",
     author_email="guillaume.schworer@obspm.fr",
-    packages=["patiencebar"],
+    py_modules=["patiencebar"],
     url="https://github.com/ceyzeriat/patiencebar/",
     license="GNU",
     description="Terminal progress bar compatible with multi-threading",
-    long_description=rd("README.rst") + "\n\n"
+    long_description=open("README.rst").read() + "\n\n"
                     + "Changelog\n"
                     + "---------\n\n"
-                    + rd("HISTORY.rst"),
+                    + open("HISTORY.rst").read(),
     package_data={"": ["LICENSE", "AUTHORS.rst"]},
     include_package_data=True,
     install_requires=[],

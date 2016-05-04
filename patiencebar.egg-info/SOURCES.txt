@@ -3,10 +3,9 @@ HISTORY.rst
 LICENSE
 MANIFEST.in
 README.rst
+patiencebar.py
 setup.cfg
 setup.py
-patiencebar/__init__.py
-patiencebar/patiencebar.py
 patiencebar.egg-info/PKG-INFO
 patiencebar.egg-info/SOURCES.txt
 patiencebar.egg-info/dependency_links.txt
