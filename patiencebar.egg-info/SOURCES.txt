@@ -1,0 +1,13 @@
+AUTHORS.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+patiencebar/__init__.py
+patiencebar/patiencebar.py
+patiencebar.egg-info/PKG-INFO
+patiencebar.egg-info/SOURCES.txt
+patiencebar.egg-info/dependency_links.txt
+patiencebar.egg-info/top_level.txt

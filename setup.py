@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from sys import argv, exit
+import re, os
 
 if "upl" in argv[1:]:
     import os
@@ -23,7 +24,7 @@ def rd(filename):
     return r
 
 vre = re.compile("__version__ = \"(.*?)\"")
-m = rd(os.path.join(os.path.dirname(os.path.abspath(__file__)), "oif", "_version.py"))
+m = rd(os.path.join(os.path.dirname(os.path.abspath(__file__)), "patiencebar", "patiencebar.py"))
 version = vre.findall(m)[0]
 
 
