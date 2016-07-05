@@ -30,7 +30,7 @@
 __all__ = ["Patiencebar", "Patiencebarmulti", "__version__", "__author__", "__copyright__", "__contributors__"]
 __major__ = "1"
 __minor__ = "0"
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 __author__ = "Guillaume Schworer (guillaume.schworer@obspm.fr)"
 __copyright__ = "Copyright 2016 Guillaume Schworer"
 __contributors__ = [
@@ -290,4 +290,4 @@ def _get_terminal_size():
         except:
             pass
     if not cr: cr = (_os.environ.get('LINES', 25), _os.environ.get('COLUMNS', 80))
-    return map(int, cr)
+    return list(map(int, cr))
