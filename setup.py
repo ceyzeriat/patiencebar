@@ -17,12 +17,6 @@ except ImportError:
     from distutils.core import setup
     setup
 
-def rd(filename):
-    f = open(filename)
-    r = f.read()
-    f.close()
-    return r
-
 version = re.findall(r"__version__ = \"(.*?)\"", open("patiencebar.py").read())[0]
 
 
@@ -39,9 +33,9 @@ setup(
                     + "Changelog\n"
                     + "---------\n\n"
                     + open("HISTORY.rst").read(),
-    package_data={"": ["LICENSE", "AUTHORS.rst"]},
     include_package_data=True,
     install_requires=[],
+    package_data={"": ["README.rst", "HISTORY.rst", "LICENSE"]},
     keywords = ['progress', 'bar', 'multi', 'threading', 'processing', 'multiprocessing', 'multithreading', 'terminal', 'command', 'line'],
     classifiers=[
         "Development Status :: 4 - Beta",
