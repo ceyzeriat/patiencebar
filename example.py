@@ -70,16 +70,16 @@ vector = np.random.random(n_calc)
 pbm = PB.Patiencebarmulti(valmax=n_calc, barsize=30, title="Heavy calculation of the square of a vector")
 
 pool = Pool(processes=threads)
-result = pool.map_async(worker, ((pbm, n_calc) for i, n_calc in enumerate(vector)))
+result = pool.map_async(worker, ((pbm, item) for item in vector))
 pool.close()
 pool.join()
 vector2 = np.asarray(result.get())
 
 
-pbm.reset(bar=False)
+pbm.reset(bar=False)  # keep all other parameters already defined at init as they are
 
 pool = Pool(processes=threads)
-result = pool.map_async(worker2, ((i, pbm, n_calc) for i, n_calc in enumerate(vector)))
+result = pool.map_async(worker2, ((i, pbm, item) for i, item in enumerate(vector)))
 pool.close()
 pool.join()
 vector2b = np.asarray(result.get())
